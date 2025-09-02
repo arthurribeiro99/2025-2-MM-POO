@@ -13,6 +13,10 @@ public class Televisao
 
     public void AumentarVolume()
     {
-        Volume = Volume + 1;
+        if (Volume < 100)
+            Volume++;
+
+        else
+            Console.WriteLine("TV ja está no máximo.")
     }
 } 
